@@ -12,7 +12,9 @@ jmeter -n -t GetTopResultsApi.jmx -l GetTopWcResult_Report.jtl -e -o GetTopWcRes
 
 The results with TPS (Hits per second) of 1 would be displayed in GetTopWcResult_Report folder within index.html charts.
 
+->docker tag justb4/jmeter jmeter
+
 To run the .jmx file with docker image -
-docker run jmeter -n -t GetTopResultsApi.jmx -l GetTopWcResult_dockerReport.jtl -e -o GetTopWcResult_dockerReport
+-> docker run jmeter -n -t GetTopResultsApi.jmx -l GetTopWcResult_dockerReport.jtl -e -o GetTopWcResult_dockerReport
 
 prior to this the jmeter image should be copied to "/opt/apache-jmeter-5.3/" where the docker pull command is done.
